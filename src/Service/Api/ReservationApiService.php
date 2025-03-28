@@ -4,11 +4,10 @@ namespace App\Service\Api;
 
 use App\Entity\Reservation;
 use DateMalformedStringException;
-use DateTimeImmutable;
 use Exception;
-use HttpException;
 use Psr\Log\LoggerInterface;
 use RuntimeException;
+use Symfony\Component\HttpKernel\Exception\HttpException;
 use Symfony\Contracts\HttpClient\Exception\ClientExceptionInterface;
 use Symfony\Contracts\HttpClient\Exception\RedirectionExceptionInterface;
 use Symfony\Contracts\HttpClient\Exception\ServerExceptionInterface;

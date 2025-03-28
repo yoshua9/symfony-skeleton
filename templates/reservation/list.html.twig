@@ -34,6 +34,11 @@
         <button type="submit">Search</button>
     </form>
 </div>
+{% for flash_message in app.session.flashbag.get('error') %}
+    <div class="flash-notice">
+        {{ flash_message }}
+    </div>
+{% endfor %}
 
 <table>
     <thead>
